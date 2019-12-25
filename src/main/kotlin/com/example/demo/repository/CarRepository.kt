@@ -9,6 +9,6 @@ import reactor.core.publisher.Flux
 interface CarRepository: ReactiveMongoRepository<Car,String>{
     fun getAll(): Flux<Car>
     fun getOneList():Flux<Car>
-
+    fun createNewList():Flux<Car>
 
 }
