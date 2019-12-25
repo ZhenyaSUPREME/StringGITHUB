@@ -11,6 +11,7 @@ interface CarRepository: ReactiveMongoRepository<Car,String>{
     fun getOneList():Flux<Car>
     // Функция getAll получает всё
     // А функция getOneList ,получить один список
+    // Получу одно из двух
 
 
 
