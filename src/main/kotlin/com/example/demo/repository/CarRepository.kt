@@ -8,6 +8,10 @@ import reactor.core.publisher.Flux
 @Repository
 interface CarRepository: ReactiveMongoRepository<Car,String>{
     fun getAll(): Flux<Car>
+    fun getOneList():Flux<Car>
+    // Функция getAll получает всё
+    // А функция getOneList ,получить один список
+
 
 
 }
